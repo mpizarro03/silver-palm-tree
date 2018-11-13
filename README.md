@@ -60,6 +60,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. This challenge should take ~ 2hrs
 
 ### Acceptance Criteria
+**Please meet as many of the following criteria as you can in the allotted time**
+
 1. Build a `<Tile />` component from `videoData`:
 ![alt text](junior_front_end_ui_mock.png "Awesome U.I. mock!")
 
