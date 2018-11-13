@@ -66,7 +66,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![alt text](junior_front_end_ui_mock.png "Awesome U.I. mock!")
 
 1. UI requirements:
-   * **All text within the video thumbnail image in the mock is part of the image**
+   * **All text within the video thumbnail image in the mock is part of the image used to create the mock**
    * Tile container `width: 420px;`
    * The video title should never exceed 1 line
      * It should hide overflowing text and add an ellipse
