@@ -1,10 +1,9 @@
 import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
 import rootReducer from './reducers/root-reducer'
 
 import getVideoMiddleware from './middlewares/get-video-middleware'
 
-const middlewares = [thunk, getVideoMiddleware]
+const middlewares = [getVideoMiddleware]
 
 export default function configureStore() {
  return createStore(
