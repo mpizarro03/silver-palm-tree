@@ -1,0 +1,8 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  min-width: 420px;
+  padding: 10px;
+  background: white;
+}
