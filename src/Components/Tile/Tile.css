@@ -6,3 +6,16 @@
   padding: 10px;
   background: white;
 }
+
+.tile__img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.tile__buttonWrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(815%, 160%);
+}
