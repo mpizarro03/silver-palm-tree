@@ -1,0 +1,38 @@
+.button {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.button:focus {
+  outline: -webkit-focus-ring-color auto 0;
+}
+.button__playIcon {
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 7px 0px 7px 13px;
+  margin-left: 4px;
+  border-color: transparent transparent transparent white;
+}
+.button--play {
+  background: #01b4b4;
+}
+
+.button--play:hover {
+  background: #007172;
+}
+
+.button--ellipses {
+  color: white;
+  background: #5d7389;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.button--ellipses:hover {
+  background: #44576b;
+}
