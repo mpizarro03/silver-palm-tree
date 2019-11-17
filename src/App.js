@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { getVideoRequest} from './actions/video-actions'
-import './App.css';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { getVideoRequest } from "./actions/video-actions";
+import "./App.css";
+import Tile from "../src/Components/Tile/Tile";
 
 class App extends Component {
-  componentDidMount () {
-    this.props.getVideoRequest()
+  componentDidMount() {
+    this.props.getVideoRequest();
   }
 
   render() {
-    const { props } = this
-    const { video = {} } = props
-    const videoData = video && video.data
-    const videoProcessing = video && video.processing
-    const videoError = video && video.error
+    const { props } = this;
+    const { video = {} } = props;
+    const videoData = video && video.data;
+    const videoProcessing = video && video.processing;
+    const videoError = video && video.error;
 
-    console.log('App Render') // please leave this log statement
+    console.log("App Render"); // please leave this log statement
 
     return (
       <div className="app">
@@ -24,22 +25,23 @@ class App extends Component {
         </header>
         <div className="app__body">
           {/* TODO: <Tile /> component here */}
+          <Tile data={videoData} />
         </div>
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-    video: state.video,
-  }
-}
+    video: state.video
+  };
+};
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
-    getVideoRequest: () => dispatch(getVideoRequest()),
-  }
-}
+    getVideoRequest: () => dispatch(getVideoRequest())
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
