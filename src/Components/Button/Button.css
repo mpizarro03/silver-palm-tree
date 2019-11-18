@@ -3,8 +3,6 @@
   width: 35px;
   border: none;
   border-radius: 50% 50%;
-  align-items: center;
-  justify-content: center;
   transition: 0.3s;
   margin: 5px;
 }
@@ -27,11 +25,13 @@
   background: #007172;
 }
 
+.button__ellipses {
+  transform: translate(-10%, -30%);
+}
 .button--ellipses {
   color: white;
   background: #5d7389;
-  margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .button--ellipses:hover {
