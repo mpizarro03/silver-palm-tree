@@ -24,8 +24,11 @@ class App extends Component {
           <h1 className="app__main-heading">{`Hello!  This is the <App /> component!  Please render your tile component in .app__body below`}</h1>
         </header>
         <div className="app__body">
-          {/* TODO: <Tile /> component here */}
-          <Tile data={videoData} />
+          {!videoError ? (
+            <Tile video={videoData} loading={videoProcessing} />
+          ) : (
+            "Error: unable to load video"
+          )}
         </div>
       </div>
     );

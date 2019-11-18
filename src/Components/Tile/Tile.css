@@ -4,18 +4,55 @@
   max-width: 420px;
   min-width: 420px;
   padding: 10px;
-  background: white;
+  background: #ffffff;
 }
 
 .tile__img {
   width: 100%;
   vertical-align: middle;
   border-style: none;
+  margin-bottom: 10px;
+  min-height: 250px;
 }
 
-.tile__buttonWrapper {
+.tile__buttons {
   display: flex;
   flex-direction: column;
   position: absolute;
-  transform: translate(815%, 160%);
+  transform: translate(815%, 165%);
+}
+
+.tile__body {
+  padding-left: 5px;
+  font-size: 14px;
+  color: black;
+
+  text-align: left;
+  line-height: 20px;
+  font-family: "Arial";
+}
+
+.tile-video-title {
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 390px;
+}
+
+.tile-video-teaser {
+  margin-top: 10px;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+
+.tile-video__meta-items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tile-video__meta-item {
+  margin-right: 10px;
 }
