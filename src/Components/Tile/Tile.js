@@ -1,7 +1,6 @@
 import React from "react";
 import "./Tile.css";
 import Button from "../Button/Button";
-import image from "../Tile/sn.png";
 
 class Tile extends React.Component {
   constructor(props) {
@@ -27,8 +26,6 @@ class Tile extends React.Component {
   render() {
     const { video, loading, error } = this.props;
 
-    console.log("video", video, "loading", loading, "error:");
-    console.log("video object is:", video);
     return (
       <div>
         {loading && !error && video
